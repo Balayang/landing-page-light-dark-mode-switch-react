@@ -1,0 +1,75 @@
+/* Dark Mode Toggle */
+.themeSwitchWrapper {
+	display: flex;
+	align-items: center;
+	z-index: 100;
+	position: fixed;
+	right: 1.6rem;
+	top: 1.875rem;
+}
+
+.themeSwitchWrapper span {
+	margin-right: 0.625rem;
+	font-size: 1rem;
+}
+
+.toggleText {
+	position: relative;
+	top: -4px;
+	right: 5px;
+	color: var(--on-background);
+}
+
+.themeSwitch {
+	display: inline-block;
+	height: 2rem;
+	position: relative;
+	width: 3.75rem;
+}
+
+.themeSwitch input {
+	display: none;
+}
+
+.slider {
+	background: #ccc;
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: 0.4s;
+}
+
+.slider::before {
+	background: #fff;
+	bottom: 4px;
+	content: '';
+	height: 1.625rem;
+	left: 4px;
+	position: absolute;
+	transition: 0.4s;
+	width: 1.625rem;
+}
+
+input:checked + .slider {
+	background: var(--primary-color);
+}
+
+input:checked + .slider::before {
+	transform: translateX(1.625rem);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round::before {
+	border-radius: 50%;
+}
+
+.fas {
+	font-size: 2rem;
+	margin-right: 5px;
+}

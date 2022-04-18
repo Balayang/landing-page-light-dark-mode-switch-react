@@ -1,0 +1,19 @@
+/* About Section */
+.aboutContainer {
+	display: flex;
+}
+
+.imageContainer {
+	border: 1px solid var(--secondary-color);
+	border-radius: 0.625rem;
+	padding: 0.625rem 1.25rem;
+	margin-right: 1.6rem;
+	width: auto;
+	background: var(--background);
+	box-shadow: var(--box-shadow);
+}
+
+img {
+	height: 18.75rem;
+	width: 18.75rem;
+}

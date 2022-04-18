@@ -1,0 +1,35 @@
+/* NavbarCSS */
+
+.navbar {
+	z-index: 10;
+	position: fixed;
+	font-size: 1.6rem;
+	letter-spacing: 0.18rem;
+	padding: 0;
+	width: 100vw;
+	background: var(--nav-color);
+	font-family: 'Oswald', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+.navbarItems {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	
+}
+
+.aTag {
+	margin-right: 1.6rem;
+	color: var(--primary-color);
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+	font-weight: bold;
+}
+
+.aTag:hover,
+.aTag:focus {
+	color: var(--on-background);
+	border-bottom: 3px solid;
+}

@@ -1,23 +1,23 @@
 import React from 'react';
-import { NavBar } from './NavBar';
-import { ThemeSwitch } from './ThemeSwitch';
-import { WelcomeSection } from './WelcomeSection';
-import { AboutSection } from './AboutSection';
-import { ProjectSection } from './ProjectSection';
-import { ContactSection } from './ContactSection';
+import { Navbar } from './components/Navbar';
+import { ThemeSwitch } from './components/ThemeSwitch';
+import { Welcome } from './components/Welcome';
+import { About } from './components/About';
+import { Project } from './components/Project';
+import { Contact } from './components/Contact';
 
-import './css/Normalize.css';
-import './css/App.css';
+import './styles/Normalize.css';
+import './styles/App.css';
 
 export const App = () => {
 	return (
 		<>
-			<NavBar />
+			<Navbar />
 			<ThemeSwitch />
-			<WelcomeSection />
-			<AboutSection />
-			<ProjectSection />
-			<ContactSection />
+			<Welcome />
+			<About />
+			<Project />
+			<Contact />
 		</>
 	);
 };

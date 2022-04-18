@@ -1,0 +1,10 @@
+/* Contact Section */
+.iconContacts {
+	margin-right: 3.125rem;
+	cursor: pointer;
+	color: var(--primary-color);
+}
+
+.iconContacts:hover {
+	color: var(--on-background);
+}
