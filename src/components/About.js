@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutCSS from '../styles/About.module.css';
-
+//import images from '../..public/images'
 //import ProudCoder from '../../public/images/undraw_proud_coder_light.svg';
 
 export const About = () => {
@@ -10,7 +10,7 @@ export const About = () => {
 			<div className={AboutCSS.aboutContainer}>
 				<div className={AboutCSS.imageContainer}>
 					<h3>Web Innovation</h3>
-					<img id="image1" src="img/undraw_conceptual_idea_light.svg" alt="Proud Coder" />
+					<img id="image1" src="undraw_proud_coder_light.svg" alt="Proud Coder" />
 				</div>
 				<div className={AboutCSS.imageContainer}>
 					<h3>Web Innovation</h3>

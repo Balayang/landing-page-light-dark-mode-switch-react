@@ -11,7 +11,9 @@
 	--text-box-color: rgb(0 0 0 / 50%);
 }
 
-[data-theme='dark'] {
+
+
+[data-theme='darkTheme'] {
 	--primary-color: rgb(150, 65, 255);
 	--primary-variant: #6c63ff;
 	--secondary-color: #03dac5;

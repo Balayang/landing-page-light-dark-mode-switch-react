@@ -2,10 +2,31 @@ import React from 'react';
 import SwitchCSS from '../styles/ThemeSwitch.module.css';
 
 export const ThemeSwitch = () => {
+	const [dataTheme, setDataTheme] = React.useState(undefined);
+	const [themeText, setThemeText] = React.useState('lightMode');
+
+	// Switch Theme Dynamically
+
+	const switchTheme = (e) => {
+		console.log(e.target.checked);
+
+		if (e.target.checked) {
+			setDataTheme('darkTheme');
+			setThemeText('Dark Mode');
+			document.documentElement.setAttribute('data-theme', dataTheme);
+			console.log(dataTheme);
+		} else if (!e.target.checked) {
+			setDataTheme(undefined);
+			setThemeText('Light Mode');
+			document.documentElement.setAttribute('data-theme', dataTheme);
+			console.log(dataTheme);
+		}
+	};
+
 	return (
 		<div className={SwitchCSS.themeSwitchWrapper}>
 			<span id="toggle-icon" className={SwitchCSS.toggleIcon}>
-				<span className={SwitchCSS.toggleText}>Light Mode</span>
+				<span className={SwitchCSS.toggleText}>{themeText}</span>
 				<svg
 					className={SwitchCSS.iconTheme}
 					stroke="currentColor"
@@ -25,7 +46,7 @@ export const ThemeSwitch = () => {
 				</svg>
 			</span>
 			<label className={SwitchCSS.themeSwitch}>
-				<input id="checkbox" type="checkbox" />
+				<input onChange={switchTheme} id="checkbox" type="checkbox" />
 				<div className={`${SwitchCSS.slider} ${SwitchCSS.round}`}></div>
 			</label>
 		</div>

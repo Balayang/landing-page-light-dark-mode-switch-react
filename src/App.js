@@ -9,7 +9,10 @@ import { Contact } from './components/Contact';
 import './styles/Normalize.css';
 import './styles/App.css';
 
-export const App = () => {
+export const App = (dataTheme) => {
+
+
+	//document.documentElement.setAttribute('data-theme', dataTheme)
 	return (
 		<>
 			<Navbar />
