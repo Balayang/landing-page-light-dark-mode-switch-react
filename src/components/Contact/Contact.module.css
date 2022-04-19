@@ -1,4 +1,9 @@
 /* Contact Section */
+.contactWrapper {
+	display: flex;
+	flex-direction: row;
+}
+
 .iconContacts {
 	margin-right: 3.125rem;
 	cursor: pointer;
